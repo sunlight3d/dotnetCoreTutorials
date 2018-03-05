@@ -1,0 +1,11 @@
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/bin/Debug/netcoreapp2.0/myApp.deps.json
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/bin/Debug/netcoreapp2.0/myApp.runtimeconfig.json
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/bin/Debug/netcoreapp2.0/myApp.runtimeconfig.dev.json
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/bin/Debug/netcoreapp2.0/myApp.dll
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/bin/Debug/netcoreapp2.0/myApp.pdb
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/obj/Debug/netcoreapp2.0/myApp.csproj.CoreCompileInputs.cache
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/obj/Debug/netcoreapp2.0/myApp.AssemblyInfoInputs.cache
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/obj/Debug/netcoreapp2.0/myApp.AssemblyInfo.cs
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/obj/Debug/netcoreapp2.0/myApp.dll
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/obj/Debug/netcoreapp2.0/myApp.pdb
+/Users/hoangnd/Documents/code/dotnetCoreTutorials/myApp/obj/Debug/netcoreapp2.0/myApp.csprojResolveAssemblyReference.cache
