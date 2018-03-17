@@ -6,7 +6,7 @@ video
 video/
 # Files for the ART/Dalvik VM
 *.dex
-
+*.mdf
 subscribe.png
 subscribe.psd
 
