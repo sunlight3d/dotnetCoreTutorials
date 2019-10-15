@@ -33,6 +33,7 @@ namespace MyApp
                 || string.IsNullOrWhiteSpace(txtUserName.Text))
             {
                 MessageBox.Show("UserName and password must not be blank");
+                return;
             }
             
             if (Database.Instance.login(txtUserName.Text, txtPassword.Text) == true)
