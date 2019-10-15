@@ -29,14 +29,25 @@ namespace MyApp
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtUserName.Text) 
+                || string.IsNullOrWhiteSpace(txtUserName.Text))
+            {
+                MessageBox.Show("UserName and password must not be blank");
+            }
+            
             if (Database.Instance.login(txtUserName.Text, txtPassword.Text) == true)
             {
-                Console.WriteLine("Login success");
+
             }
             else
             {
-                Console.WriteLine("Login failed");
+                MessageBox.Show("Cannot login to System");
             }
+        }
+
+        private void txtUserName_Validating(object sender, CancelEventArgs e)
+        {
+            
         }
     }
 }
