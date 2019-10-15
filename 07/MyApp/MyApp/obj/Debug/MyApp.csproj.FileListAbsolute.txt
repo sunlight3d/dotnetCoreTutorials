@@ -1,0 +1,8 @@
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\07\MyApp\MyApp\bin\Debug\MyApp.exe.config
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\07\MyApp\MyApp\bin\Debug\MyApp.exe
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\07\MyApp\MyApp\bin\Debug\MyApp.pdb
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\07\MyApp\MyApp\obj\Debug\MyApp.Login.resources
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\07\MyApp\MyApp\obj\Debug\MyApp.Properties.Resources.resources
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\07\MyApp\MyApp\obj\Debug\MyApp.csproj.GenerateResource.cache
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\07\MyApp\MyApp\obj\Debug\MyApp.exe
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\07\MyApp\MyApp\obj\Debug\MyApp.pdb

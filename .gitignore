@@ -9,6 +9,8 @@ video/
 *.mdf
 subscribe.png
 subscribe.psd
+.vs
+.vs/
 
 # Java class files
 *.class
