@@ -16,5 +16,32 @@ namespace MyApp
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'winformExamDataSet.tblClass' table. You can move, or remove it, as needed.
+            this.tblClassTableAdapter.Fill(this.winformExamDataSet.tblClass);
+
+        }
     }
 }

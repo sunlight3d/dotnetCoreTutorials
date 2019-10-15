@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -55,6 +56,18 @@ namespace MyApp
                 return true;
             }
             return false;
+        }
+        public DataTable fetchDataTable() 
+        {
+            sqlString = "SELECT ClassName, StudentName," +
+                "UserName, Address FROM tblClass " +
+                "INNER JOIN tblStudent " +
+                "ON tblClass.ClassCode = tblStudent.ClassCode " +
+                "ORDER BY tblClass.ClassName";
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlString, Connection);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            return dataTable;
         }
     }
 }

@@ -20,3 +20,8 @@ CREATE TABLE tblStudent(
 ALTER TABLE tblStudent 
 ADD CONSTRAINT FK_ClassStudent
 FOREIGN KEY (ClassCode) REFERENCES tblClass(ClassCode);
+
+SELECT tblClass.*, tblStudent.* FROM tblClass 
+INNER JOIN tblStudent 
+ON tblClass.ClassCode=tblStudent.ClassCode 
+ORDER BY tblClass.ClassName;
