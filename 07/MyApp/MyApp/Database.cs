@@ -57,6 +57,23 @@ namespace MyApp
             }
             return false;
         }
+        public Boolean insertStudent(String studentName, int gender,
+            DateTime dateOfBirth, String address, String classCode, 
+            String UserName, String Password)
+        {
+
+            sqlString = "SELECT StudentCode FROM tblStudent " +
+                        "WHERE UserName = @UserName AND Password = @Password";
+            sqlCommand = new SqlCommand(sqlString, Connection);
+            sqlCommand.Parameters.AddWithValue("@UserName", UserName);
+            sqlCommand.Parameters.AddWithValue("@Password", Password);
+            sqlDataReader = sqlCommand.ExecuteReader();
+            while (sqlDataReader.Read())
+            {
+                return true;
+            }
+            return false;
+        }
         public DataTable fetchDataTable() 
         {
             sqlString = "SELECT ClassName, StudentName," +

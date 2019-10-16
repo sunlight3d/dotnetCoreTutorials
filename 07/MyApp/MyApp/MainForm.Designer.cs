@@ -48,17 +48,14 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.winformExamDataSet = new MyApp.WinformExamDataSet();
             this.winformExamDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblClassBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblClassTableAdapter = new MyApp.WinformExamDataSetTableAdapters.tblClassTableAdapter();
-            this.classCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numberOfPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.winformExamDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.winformExamDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClassBindingSource)).BeginInit();
@@ -274,22 +271,16 @@
             this.textBox4.Size = new System.Drawing.Size(629, 38);
             this.textBox4.TabIndex = 14;
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.classCodeDataGridViewTextBoxColumn,
-            this.classNameDataGridViewTextBoxColumn,
-            this.numberOfPeopleDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblClassBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(77, 528);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 102;
-            this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.Size = new System.Drawing.Size(1489, 440);
-            this.dataGridView1.TabIndex = 3;
+            this.dataGridView.AllowUserToOrderColumns = true;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(77, 528);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersWidth = 102;
+            this.dataGridView.RowTemplate.Height = 40;
+            this.dataGridView.Size = new System.Drawing.Size(1489, 440);
+            this.dataGridView.TabIndex = 3;
             // 
             // winformExamDataSet
             // 
@@ -310,37 +301,12 @@
             // 
             this.tblClassTableAdapter.ClearBeforeFill = true;
             // 
-            // classCodeDataGridViewTextBoxColumn
-            // 
-            this.classCodeDataGridViewTextBoxColumn.DataPropertyName = "ClassCode";
-            this.classCodeDataGridViewTextBoxColumn.HeaderText = "ClassCode";
-            this.classCodeDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.classCodeDataGridViewTextBoxColumn.Name = "classCodeDataGridViewTextBoxColumn";
-            this.classCodeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.classCodeDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // classNameDataGridViewTextBoxColumn
-            // 
-            this.classNameDataGridViewTextBoxColumn.DataPropertyName = "ClassName";
-            this.classNameDataGridViewTextBoxColumn.HeaderText = "ClassName";
-            this.classNameDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.classNameDataGridViewTextBoxColumn.Name = "classNameDataGridViewTextBoxColumn";
-            this.classNameDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // numberOfPeopleDataGridViewTextBoxColumn
-            // 
-            this.numberOfPeopleDataGridViewTextBoxColumn.DataPropertyName = "NumberOfPeople";
-            this.numberOfPeopleDataGridViewTextBoxColumn.HeaderText = "NumberOfPeople";
-            this.numberOfPeopleDataGridViewTextBoxColumn.MinimumWidth = 12;
-            this.numberOfPeopleDataGridViewTextBoxColumn.Name = "numberOfPeopleDataGridViewTextBoxColumn";
-            this.numberOfPeopleDataGridViewTextBoxColumn.Width = 250;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1635, 1003);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -350,7 +316,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.winformExamDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.winformExamDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClassBindingSource)).EndInit();
@@ -380,13 +346,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.BindingSource winformExamDataSetBindingSource;
         private WinformExamDataSet winformExamDataSet;
         private System.Windows.Forms.BindingSource tblClassBindingSource;
         private WinformExamDataSetTableAdapters.tblClassTableAdapter tblClassTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn classCodeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn classNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numberOfPeopleDataGridViewTextBoxColumn;
     }
 }

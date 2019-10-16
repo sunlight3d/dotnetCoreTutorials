@@ -15,6 +15,7 @@ namespace MyApp
         public MainForm()
         {
             InitializeComponent();
+            dataGridView.DataSource = Database.Instance.fetchDataTable();
         }
 
         private void label1_Click(object sender, EventArgs e)
