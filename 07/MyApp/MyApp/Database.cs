@@ -57,22 +57,23 @@ namespace MyApp
             }
             return false;
         }
-        public Boolean insertStudent(String studentName, int gender,
+        public void insertStudent(String studentName, int gender,
             DateTime dateOfBirth, String address, String classCode, 
-            String UserName, String Password)
+            String userName, String password)
         {
 
-            sqlString = "SELECT StudentCode FROM tblStudent " +
-                        "WHERE UserName = @UserName AND Password = @Password";
+            sqlString = "INSERT INTO tblStudent" +
+                "(StudentName, Gender, DateOfBirth, Address, ClassCode, UserName, Password)" +
+                "VALUES(@StudentName, @Gender, @DateOfBirth, @Address, @ClassCode, @UserName, @Password)";
             sqlCommand = new SqlCommand(sqlString, Connection);
-            sqlCommand.Parameters.AddWithValue("@UserName", UserName);
-            sqlCommand.Parameters.AddWithValue("@Password", Password);
-            sqlDataReader = sqlCommand.ExecuteReader();
-            while (sqlDataReader.Read())
-            {
-                return true;
-            }
-            return false;
+            sqlCommand.Parameters.AddWithValue("@StudentName", studentName);
+            sqlCommand.Parameters.AddWithValue("@Gender", gender);
+            sqlCommand.Parameters.AddWithValue("@DateOfBirth", dateOfBirth);
+            sqlCommand.Parameters.AddWithValue("@Address", address);
+            sqlCommand.Parameters.AddWithValue("@ClassCode", classCode);
+            sqlCommand.Parameters.AddWithValue("@UserName", userName);
+            sqlCommand.Parameters.AddWithValue("@Password", password);
+            int affectedRows = sqlCommand.ExecuteNonQuery();
         }
         public DataTable fetchDataTable() 
         {

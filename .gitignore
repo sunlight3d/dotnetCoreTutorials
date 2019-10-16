@@ -11,7 +11,7 @@ subscribe.png
 subscribe.psd
 .vs
 .vs/
-
+*.exe
 # Java class files
 *.class
 
