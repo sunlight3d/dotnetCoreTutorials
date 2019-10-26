@@ -15,8 +15,7 @@ namespace ExamWindow
         public MainForm()
         {
             InitializeComponent();
-            this.MdiParent = this;
-            this.Dock = DockStyle.Fill;
+       
 
         }
 
@@ -33,6 +32,7 @@ namespace ExamWindow
         private void employeesProfilesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EmployeeListForm employeeListForm = new EmployeeListForm();
+            employeeListForm.MdiParent = this;
             employeeListForm.Show();
             employeeListForm.MdiParent = this;
         }

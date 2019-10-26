@@ -7,3 +7,4 @@ C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWin
 C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.csproj.GenerateResource.Cache
 C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.exe
 C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.pdb
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.EmployeeListForm.resources
