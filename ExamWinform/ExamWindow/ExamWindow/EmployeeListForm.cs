@@ -63,7 +63,14 @@ namespace ExamWindow
 
         private void listViewEmployees_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            EmployeeDetailForm employeeDetailForm = new EmployeeDetailForm();
+            employeeDetailForm.MdiParent = this.MdiParent;
+            employeeDetailForm.Show();
         }
     }
 }

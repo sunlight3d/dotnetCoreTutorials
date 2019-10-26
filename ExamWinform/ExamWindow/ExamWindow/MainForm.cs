@@ -33,8 +33,7 @@ namespace ExamWindow
         {
             EmployeeListForm employeeListForm = new EmployeeListForm();
             employeeListForm.MdiParent = this;
-            employeeListForm.Show();
-            employeeListForm.MdiParent = this;
+            employeeListForm.Show();           
         }
     }
 }

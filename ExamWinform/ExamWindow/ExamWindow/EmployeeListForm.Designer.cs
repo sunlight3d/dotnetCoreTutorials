@@ -62,7 +62,7 @@
             // 
             this.treeViewDepartments.Location = new System.Drawing.Point(3, 3);
             this.treeViewDepartments.Name = "treeViewDepartments";
-            this.treeViewDepartments.Size = new System.Drawing.Size(273, 409);
+            this.treeViewDepartments.Size = new System.Drawing.Size(273, 380);
             this.treeViewDepartments.TabIndex = 1;
             this.treeViewDepartments.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewDepartments_AfterSelect);
             // 
@@ -78,7 +78,7 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(857, 421);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(857, 386);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // listViewEmployees
@@ -98,7 +98,7 @@
             this.listViewEmployees.Location = new System.Drawing.Point(286, 3);
             this.listViewEmployees.MultiSelect = false;
             this.listViewEmployees.Name = "listViewEmployees";
-            this.listViewEmployees.Size = new System.Drawing.Size(568, 415);
+            this.listViewEmployees.Size = new System.Drawing.Size(568, 380);
             this.listViewEmployees.TabIndex = 2;
             this.listViewEmployees.UseCompatibleStateImageBehavior = false;
             this.listViewEmployees.View = System.Windows.Forms.View.Details;
@@ -113,7 +113,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btnDelete, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnInsert, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnClose, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(291, 547);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(294, 504);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -129,6 +129,7 @@
             this.btnInsert.TabIndex = 0;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnDelete
             // 
@@ -185,7 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 599);
+            this.ClientSize = new System.Drawing.Size(920, 560);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
