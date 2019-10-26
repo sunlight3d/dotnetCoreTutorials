@@ -1,0 +1,9 @@
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\bin\Debug\ExamWindow.exe.config
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\bin\Debug\ExamWindow.exe
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\bin\Debug\ExamWindow.pdb
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.csprojResolveAssemblyReference.cache
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.MainForm.resources
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.Properties.Resources.resources
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.csproj.GenerateResource.Cache
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.exe
+C:\Users\sunli\Documents\code\dotnetCoreTutorials\ExamWinform\ExamWindow\ExamWindow\obj\Debug\ExamWindow.pdb
