@@ -12,36 +12,17 @@ namespace ExamWindow
 {
     public partial class EmployeeDetailForm : Form
     {
+        public EmployeeListForm employeeListForm;
+        private Employee employee = new Employee();
         public EmployeeDetailForm()
         {
             InitializeComponent();
-            DataTable dataTable = Database.Instance.GetDataFromQuery("select * from Departments");
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in Database.Instance.GetAllDepartments().Rows)
             {
-                comboDepartment.Items.Add(row);//row["DeptName"].ToString()
+                comboDepartment.Items.Add(row["DeptName"].ToString());//row["DeptName"].ToString()
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+           
         private void comboDepartment_SelectedIndexChanged(object sender, EventArgs e)
         {
             
@@ -49,12 +30,44 @@ namespace ExamWindow
 
         private void EmployeeDetailForm_Load(object sender, EventArgs e)
         {
-            DataTable dataTable = Database.Instance.GetDataFromQuery("select * from Departments");
             comboDepartment.Items.Clear();
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in Database.Instance.GetAllDepartments().Rows)
             {
-                comboDepartment.Items.Add(row);//row["DeptName"].ToString()
+                comboDepartment.Items.Add(row["DeptName"]);//row["DeptName"].ToString()
             }
+        }
+
+        private void btnAddNew_Click(object sender, EventArgs e)
+        {
+            employee.employeeName = textBoxName.Text.Trim();
+
+            String deptName = comboDepartment.SelectedItem.ToString();
+            String deptID = Database.Instance.GetDeptIDFromName(deptName);
+            employee.deptID = deptID;
+
+            if(radioMale.Checked == true) {
+                employee.gender = 1;
+            } else if(radioFemale.Checked == true) {
+                employee.gender = 0;
+            }
+            employee.birthDate = dateTimeBirthDate.Value;
+            employee.tel = textBoxTel.Text;
+            employee.address = textBoxAddress.Text;
+            String insertResult = Database.Instance.InsertEmployee(employee);
+            if(insertResult.Length > 0)
+            {
+                MessageBox.Show("Error"+insertResult,
+                                "Error",
+                                MessageBoxButtons.OK);
+                return;
+            }
+            employeeListForm.ReloadTreeViewDepartments();
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
