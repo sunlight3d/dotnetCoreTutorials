@@ -13,6 +13,7 @@ namespace ExamWindow
     public partial class EmployeeListForm : Form
     {
         private int employeeID = -1;
+        public String departmentID { get; set; }
         public EmployeeListForm()
         {
             InitializeComponent();
@@ -53,7 +54,7 @@ namespace ExamWindow
                 listViewEmployees.Items.Add(listViewItem);                
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
             if (this.employeeID < 0) {
                 MessageBox.Show("You must select an employee to delete",
@@ -66,18 +67,22 @@ namespace ExamWindow
                                 MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes && this.employeeID > 0) {
                 Database.Instance.DeleteEmployee(this.employeeID);
+                this.ReloadEmployeeList(departmentID);
             }
         }
 
         private void treeViewDepartments_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            String selectedDeptID = (String)treeViewDepartments.SelectedNode.Tag;
-            ReloadEmployeeList(selectedDeptID);
+            departmentID = (String)treeViewDepartments.SelectedNode.Tag;
+            ReloadEmployeeList(departmentID);
         }
 
         private void listViewEmployees_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            this.employeeID = Int32.Parse(listViewEmployees.SelectedItems[0].Text);
+        {            
+            if (listViewEmployees.SelectedItems.Count > 0) {
+                this.employeeID = Int32.Parse(listViewEmployees.SelectedItems[0].Text);                
+            }
+            
         }
 
         private void btnInsert_Click(object sender, EventArgs e)

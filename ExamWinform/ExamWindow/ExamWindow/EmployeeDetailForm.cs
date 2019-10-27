@@ -60,8 +60,8 @@ namespace ExamWindow
                                 "Error",
                                 MessageBoxButtons.OK);
                 return;
-            }
-            employeeListForm.ReloadTreeViewDepartments();
+            }         
+            employeeListForm.ReloadEmployeeList(employeeListForm.departmentID);
             this.Close();
         }
 
